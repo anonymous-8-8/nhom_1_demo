@@ -13,4 +13,21 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/product")
 public class ProductController {
 
+    @Autowired
+    private IProductService productService;
+    @PostMapping
+    public ResponseEntity<String> createProduct(@RequestBody ProductRequest request){
+        String erro= productService.createProduct(request,null);
+        return new ResponseEntity<>(erro, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<String> updateProduct(@RequestBody ProductRequest request , @PathVariable("id") Long id){
+        String erro= productService.createProduct(request,id);
+        return new ResponseEntity<>(erro, HttpStatus.CREATED);
+    }
 }
+
+
+}
+
