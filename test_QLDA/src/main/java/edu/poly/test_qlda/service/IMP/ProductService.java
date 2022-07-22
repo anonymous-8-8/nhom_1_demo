@@ -1,4 +1,5 @@
 package edu.poly.test_qlda.service.IMP;
+
 import edu.poly.test_qlda.entity.*;
 import edu.poly.test_qlda.infrastructure.converter.ProductConver;
 import edu.poly.test_qlda.infrastructure.converter.SubCategoryConver;
@@ -85,6 +86,13 @@ public class ProductService implements IProductService {
         }
         return erro;
     }
+
+
+
+import edu.poly.test_qlda.service.IProductService;
+
+public class ProductService implements IProductService {
+
 
 
 }

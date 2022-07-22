@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/product")
 public class ProductController {
+
     @Autowired
     private IProductService productService;
     @PostMapping
@@ -26,3 +27,7 @@ public class ProductController {
         return new ResponseEntity<>(erro, HttpStatus.CREATED);
     }
 }
+
+
+}
+
