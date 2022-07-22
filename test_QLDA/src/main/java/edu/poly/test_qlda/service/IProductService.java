@@ -1,6 +1,6 @@
 package edu.poly.test_qlda.service;
 
-import edu.poly.test_qlda.infrastructure.request.SubCategoryRequest;
+import edu.poly.test_qlda.infrastructure.request.ProductRequest;
 import edu.poly.test_qlda.infrastructure.response.ProductResponse;
 import org.springframework.data.domain.Pageable;
 

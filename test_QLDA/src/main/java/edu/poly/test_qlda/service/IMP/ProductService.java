@@ -2,26 +2,18 @@ package edu.poly.test_qlda.service.IMP;
 
 import edu.poly.test_qlda.entity.*;
 import edu.poly.test_qlda.infrastructure.converter.ProductConver;
-import edu.poly.test_qlda.infrastructure.converter.SubCategoryConver;
 import edu.poly.test_qlda.infrastructure.request.ProductRequest;
-import edu.poly.test_qlda.infrastructure.request.SubCategoryRequest;
 import edu.poly.test_qlda.repository.*;
 import edu.poly.test_qlda.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import edu.poly.test_qlda.infrastructure.response.ProductResponse;
-import edu.poly.test_qlda.service.IProductService;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 @Service
 public class ProductService implements IProductService {
 

@@ -1,5 +1,6 @@
 package edu.poly.test_qlda.controller;
 
+import edu.poly.test_qlda.infrastructure.request.ProductRequest;
 import edu.poly.test_qlda.infrastructure.response.ProductResponse;
 import edu.poly.test_qlda.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +32,6 @@ public class ProductController {
     }
 
 
-    @Autowired
-    private IProductService productService;
     @PostMapping
     public ResponseEntity<String> createProduct(@RequestBody ProductRequest request){
         String erro= productService.createProduct(request,null);
@@ -47,5 +46,4 @@ public class ProductController {
 }
 
 
-}
 
